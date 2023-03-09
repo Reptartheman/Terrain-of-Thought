@@ -1,9 +1,8 @@
-/* 
-ROUTES: To home page, to journal pages, route to parks grid 
-MAYBE :login page, signup page
+const express = require('express');
+const path = require('path');
+const routes = require('./controllers');
+const sequelize = require('./config/connection');
+const exphbs = require('express-handlebars');
 
-middleware
-sequelize
-
-
-*/
+const app = express();
+const PORT = process.env.PORT || 3001;
