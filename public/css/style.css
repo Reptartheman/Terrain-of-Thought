@@ -1,0 +1,10 @@
+body {
+    background-image: url("https://upload.wikimedia.org/wikipedia/commons/a/aa/Dawn_on_the_S_rim_of_the_Grand_Canyon_%288645178272%29.jpg");
+}
+
+.customnav {
+    padding: 0%; 
+    border: 20px; 
+    border-style: solid; 
+    border-color: #3e5642
+}
