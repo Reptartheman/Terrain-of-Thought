@@ -1,5 +1,22 @@
-body {
+.background-img {
     background-image: url("https://upload.wikimedia.org/wikipedia/commons/a/aa/Dawn_on_the_S_rim_of_the_Grand_Canyon_%288645178272%29.jpg");
+    height: 100%;
+}
+
+.title {
+    font-size: 150px;
+    color: whitesmoke;
+    text-shadow: 1px 1px 20px #000000;
+    font-family: 'Vollkorn', serif;
+    opacity: 75%;
+}
+
+.subtitle {
+    font-size: 50px;
+    color: whitesmoke;
+    text-shadow: 1px 1px 20px #000000;
+    font-family: 'Vollkorn', serif;
+    opacity: 75%;
 }
 
 .customnav {
