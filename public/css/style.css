@@ -1,9 +1,11 @@
 .background-img {
-    background-image: url("https://upload.wikimedia.org/wikipedia/commons/a/aa/Dawn_on_the_S_rim_of_the_Grand_Canyon_%288645178272%29.jpg");
     height: 100%;
+    width: max-content;
+    background-size: cover; 
 }
 
 .title {
+    margin-top: -1000px;
     font-size: 150px;
     color: whitesmoke;
     text-shadow: 1px 1px 20px #000000;
