@@ -34,3 +34,7 @@ Park.init(
 );
 
 module.exports = Park;
+
+
+// journal datatype.text
+// park id
