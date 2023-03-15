@@ -17,6 +17,14 @@ Park.init(
       type: DataTypes.STRING,
       allowNull: false,
     },
+    longitude: {
+      type: DataTypes.INTEGER,
+      allowNull: false,
+    },
+    latitude: {
+      type: DataTypes.INTEGER,
+      allowNull: false,
+    },
     user_id: {
       type: DataTypes.INTEGER,
       references: {
@@ -34,7 +42,3 @@ Park.init(
 );
 
 module.exports = Park;
-
-
-// journal datatype.text
-// park id
