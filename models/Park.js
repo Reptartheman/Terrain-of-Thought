@@ -5,6 +5,12 @@ class Park extends Model {}
 
 Park.init(
   {
+    id: {
+      type: DataTypes.INTEGER,
+      allowNull: false,
+      primaryKey: true,
+      autoIncrement: true,
+    },
     name: {
       type: DataTypes.STRING,
       allowNull: false,
@@ -17,20 +23,13 @@ Park.init(
       type: DataTypes.STRING,
       allowNull: false,
     },
-    longitude: {
-      type: DataTypes.INTEGER,
-      allowNull: false,
-    },
     latitude: {
-      type: DataTypes.INTEGER,
+      type: DataTypes.DECIMAL,
       allowNull: false,
     },
-    user_id: {
-      type: DataTypes.INTEGER,
-      references: {
-        model: 'user',
-        key: 'id',
-      },
+    longitude: {
+      type: DataTypes.DECIMAL,
+      allowNull: false,
     },
   },
   {
