@@ -3,6 +3,17 @@ const Park = require('./Park');
 const Journal = require('./Journal')
 
 
+Park.hasMany(Journal, {
+    foreignKey: 'park_id',
+});
+
+User.hasMany(Journal, {
+    foreignKey: 'user_id',
+});
+
+Journal.belongsTo(User, {
+    foreignKey: 'user_id',
+});
 
 // Parks has many Journals
 // Journal can have one Park
