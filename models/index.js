@@ -7,6 +7,10 @@ Park.hasMany(Journal, {
     foreignKey: 'park_id',
 });
 
+Journal.belongsTo(Park, {
+    foreignKey: 'park_id',
+})
+
 User.hasMany(Journal, {
     foreignKey: 'user_id',
 });
