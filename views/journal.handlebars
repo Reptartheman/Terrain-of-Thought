@@ -1,44 +1,43 @@
-<div class="row">
-  <div class="col-auto">
-    <h2>Welcome, {{name}}!</h2>
-  </div>
-</div>
-
-<div class="row mt-4">
-  <div class="col-md-6">
-    <h3>Create a New Project:</h3>
-
-    <form class="form new-project-form">
-      <div class="form-group">
-        <label for="project-name">project name:</label>
-        <input class="form-input" type="text" id="project-name" name="project-name" />
+   <main>
+      <div class="sidebar" style="background-image: url(./public/assets/{{park.parkname}}); background-size: cover;" >
+        <div>
+        </div>
+        <h1>{{park.parkname}}</h1>
+        <h2 class="park-info">{{park.state}}</h2>
+        <h2 class="park-info">{{park.activities}}</h2>
+        <div id="map"></div>
       </div>
-      <div class="form-group">
-        <label for="project-desc">description:</label>
-        <textarea class="form-input" id="project-desc" name="project-desc"></textarea>
-      </div>
-      <div class="form-group">
-        <button type="submit" class="btn btn-primary">Create</button>
-      </div>
-    </form>
-  </div>
-
-  {{!-- {{#if projects.length}}
-  <div class="col-md-6 project-list">
-    <h3>Current Projects:</h3>
-
-    {{#each projects as |project|}}
-    <div class="row mb-2">
-      <div class="col-md-8">
-        <h4><a href="/project/{{project.id}}">{{project.name}}</a></h4>
-      </div>
-      <div class="col-md-4">
-        <button class="btn btn-sm btn-danger" data-id="{{project.id}}">DELETE</button>
-      </div>
-    </div>
-    {{/each}}
-  </div>
-  {{/if}}
-</div> --}}
-
-<script src="./js/profile.js"></script>
+      <form>
+        <div class="form-group">
+          <textarea
+            class="form-control journal-entry"
+            id="exampleFormControlTextarea1"
+            rows="4"
+          ></textarea>
+        </div>
+      </form>
+      <button type="button" class="btn btn-primary btn-sm journal-btn">
+        Submit
+      </button>
+      <div class="card text-bg-secondary mb-3 journal-card">
+        <div class="card-header">{{park.parkname}} Journal History</div>
+        <div class="card-body">
+          <p class="card-text">This will be where the data from the past post from the user is persistent and can be viewed after being submit.</p>
+        </div>
+    </main>
+    <script src="https://unpkg.com/leaflet@1.9.3/dist/leaflet.js"
+    integrity="sha256-WBkoXOwTeyKclOHuWtc+i2uENFpDZ9YPdf5Hf+D7ewM="
+    crossorigin=""></script>
+    <script>
+      var map = L.map('map').setView([{{park.latitude}}, {{park.longitude}}], 13);
+      var marker = L.marker([{{park.latitude}}, {{park.longitude}}]).addTo(map);
+      marker.bindPopup({{park.parkname}}).openPopup();
+      
+      
+      L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
+          maxZoom: 19,
+          attribution: '&copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a>'
+      }).addTo(map);
+    </script>  
+  </body>
+</html>
