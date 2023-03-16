@@ -126,6 +126,7 @@ div>img {
 #map {
     height: 300px;
     width: 300px;
+    margin: 20%;
 }
 
 .journal-entry {
@@ -226,14 +227,18 @@ div>img {
 
   @media screen and (max-width: 768px) {
     .sidebar {
-        height: auto;
         width: 100%;
+        max-height: 350px;
         position: absolute;
     }
+    #map {
+        visibility: hidden;
+    }
     .journal-entry {
+        margin-top: 75%;
         margin-left: 0px;
         width: 100%;
-        height: auto;
+        min-height: 400px;
     }
     .journal-btn {
         margin-top: 10px;
