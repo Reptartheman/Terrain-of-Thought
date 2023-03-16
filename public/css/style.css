@@ -161,3 +161,67 @@ div>img {
     font-family: 'Vollkorn', serif;
     font-weight: bold;
 }
+.btn {
+    text-align: center;
+    display: inline-block;
+    padding: 0.5rem 1.2rem;
+    margin: 0;
+    text-decoration: none;
+    font-size: 1rem;
+    border-radius: 0.3rem;
+    border: 1px solid transparent;
+    outline: none;
+    background-color: #064a11;
+    color: whitesmoke;
+    transition: color 0.2s ease-in-out, background-color 0.2s ease-in-out;
+  }
+  
+  .btn:hover {
+    background-color: #cecece;
+  }
+  
+
+  form .form-input,
+  form .form-textarea {
+    display: block;
+  }
+  
+
+  
+  form label,
+  form .form-label {
+    display: inline-block;
+    font-size: 1.2rem;
+    margin: 0.625rem 0 0.25rem 0.3rem;
+  }
+  
+  form .form-input {
+    width: 100%;
+    padding: 0.75rem;
+    color: #1a1a1a;
+    background-color: #ffffff;
+    margin: 0.625rem 0;
+    font-size: 1.2rem;
+    border: 1px solid #484848;
+    border-radius: 0.3rem;
+  }
+  
+ 
+
+ 
+  
+  
+  
+
+  
+  
+ 
+  
+  
+
+
+  
+ 
+  
+      
+    
