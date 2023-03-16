@@ -4,7 +4,7 @@ const parkData = [
   {
     name: 'Great Smoky Mountains National Park',
     state: 'Tennessee and North Carolina',
-    activites: 'Hiking',
+    activities: 'Hiking',
     latitude: 35.6131,
     longitude: -83.5532
   },
