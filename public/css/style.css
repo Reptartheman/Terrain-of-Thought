@@ -135,9 +135,10 @@ div>img {
     height: 500px;
 }
 
-.journal-button {
-    margin-left: 600px;
-    margin-top: 20px;
+.journal-card {
+    max-width: 500px; 
+    margin-left: 600px; 
+    margin-top: 30px;
 }
 
 .sidebar {
@@ -146,9 +147,9 @@ div>img {
     top: 0;
     left: 0;
     position: fixed;
-    background-color: darkslategrey;
     padding-top: 20px;
 }
+
 
 .sidebar h1 {
     text-align: center;
@@ -205,7 +206,43 @@ div>img {
     border: 1px solid #484848;
     border-radius: 0.3rem;
   }
+
+  .journal-btn {
+    margin-left: 600px;
+    margin-top: 20px;
+}
   
+
+  @media screen and (max-width: 820px) {
+    .sidebar {
+        width: 400px;
+    }
+    
+    .journal-entry {
+        margin-left: 450px;
+        width: 50%;
+    }
+  }
+
+  @media screen and (max-width: 768px) {
+    .sidebar {
+        height: auto;
+        width: 100%;
+        position: absolute;
+    }
+    .journal-entry {
+        margin-left: 0px;
+        width: 100%;
+        height: auto;
+    }
+    .journal-btn {
+        margin-top: 10px;
+        margin-left: 10px;
+    }
+    .journal-card {
+        margin-left: 0px;
+    }
+  }
  
 
  
