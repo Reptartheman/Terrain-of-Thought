@@ -31,6 +31,10 @@ Park.init(
       type: DataTypes.DECIMAL,
       allowNull: false,
     },
+    filename: {
+      type: DataTypes.STRING,
+      allowNull: false,
+    },
   },
   {
     sequelize,
