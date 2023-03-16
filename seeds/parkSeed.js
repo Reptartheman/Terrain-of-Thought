@@ -2,7 +2,7 @@ const { Park } = require('../models');
 
 const parkData = [
   {
-    name: 'Great Smoky Mountains National Park',
+    parkname: 'Great Smoky Mountains National Park',
     state: 'Tennessee and North Carolina',
     activities: 'Hiking',
     latitude: 35.6131,
@@ -10,7 +10,7 @@ const parkData = [
     filename: 'great-smokey-mountains.jpg'
   },
   {
-    name: 'Grand Canyon National Park',
+    parkname: 'Grand Canyon National Park',
     state: 'Arizona',
     activities: 'Hiking, River Rafting, ',
     latitude: 36.1069,
@@ -18,7 +18,7 @@ const parkData = [
     filename: 'grand-canyon.jpg'
   },
   {
-    name: 'Rocky Mountain National Park',
+    parkname: 'Rocky Mountain National Park',
     state: 'Colorado',
     activities: 'Hiking, Camping',
     latitude: 40.3428,
@@ -26,7 +26,7 @@ const parkData = [
     filename: 'rocky-mountain.jpg'
   },
   {
-    name: 'Zion National Park',
+    parkname: 'Zion National Park',
     state: 'Utah',
     activities: 'Hiking, Camping, Group tours, Horseback Riding',
     latitude: 37.2982,
@@ -34,7 +34,7 @@ const parkData = [
     filename: 'zion.jpg'
   },
   {
-    name: 'Yosemite National Park',
+    parkname: 'Yosemite National Park',
     state: 'California',
     activities: 'Hiking, Camping, Rock Climbing',
     latitude: 37.8651,
@@ -42,7 +42,7 @@ const parkData = [
     filename: 'yosemite.jpg'
   },
   {
-    name: 'Yellowstone National Park',
+    parkname: 'Yellowstone National Park',
     state: 'Wyoming',
     activities: 'Hiking, Camping',
     latitude: 44.4280,
@@ -50,7 +50,7 @@ const parkData = [
     filename: 'yellowstone.jpg'
   },
   {
-    name: 'Acadia National Park',
+    parkname: 'Acadia National Park',
     state: 'Maine',
     activities: 'Hiking, Rock Climbing, Biking, Horseback Riding',
     latitude: 44.338554,
@@ -58,7 +58,7 @@ const parkData = [
     filename: 'acadia.jpg'
   },
   {
-    name: 'Grand Teton National Park',
+    parkname: 'Grand Teton National Park',
     state: 'Wyoming',
     activities: 'Hiking, Mountaineering, Camping',
     latitude: 43.802460,
@@ -66,7 +66,7 @@ const parkData = [
     filename: 'grand-teton.jpg'
   },
   {
-    name: 'Olympic National Park',
+    parkname: 'Olympic National Park',
     state: 'Washington',
     activities: 'Hiking, Backpacking, Wildlife Viewing',
     latitude: 48.242321,
@@ -74,7 +74,7 @@ const parkData = [
     filename: 'olympic.jpg'
   },
   {
-    name: 'Glacier National Park',
+    parkname: 'Glacier National Park',
     state: 'Montana',
     activities: 'Hiking, Scenic Driving',
     latitude: 48.502281,
@@ -82,7 +82,7 @@ const parkData = [
     filename: 'glacier.jpg'
   },
   {
-    name: 'Joshua Tree National Park',
+    parkname: 'Joshua Tree National Park',
     state: 'California',
     activities: 'Camping, Stargazing',
     latitude: 34.072170,
@@ -90,7 +90,7 @@ const parkData = [
     filename: 'joshua-tree.jpg'
   },
   {
-    name: 'Bryce Canyon National Park',
+    parkname: 'Bryce Canyon National Park',
     state: 'Utah',
     activities: 'Hiking, Skiing, Rock Climbing',
     latitude: 37.5930,
@@ -98,7 +98,7 @@ const parkData = [
     filename: 'bryce-canyon.jpg'
   },
   {
-    name: 'Cuyahoga Valley National Park',
+    parkname: 'Cuyahoga Valley National Park',
     state: 'Ohio',
     activities: 'Hiking, Scenic Driving',
     latitude: 41.2808,
@@ -106,7 +106,7 @@ const parkData = [
     filename: 'cuyahoga-valley.jpg'
   },
   {
-    name: 'Gateway Arch National Park',
+    parkname: 'Gateway Arch National Park',
     state: 'Missouri',
     activities: 'Strolling, Learning about History',
     latitude: 38.6247,
@@ -114,7 +114,7 @@ const parkData = [
     filename: 'gateway-arch.jpg'
   },
   {
-    name: 'Indiana Dunes National Park',
+    parkname: 'Indiana Dunes National Park',
     state: 'Indiana',
     activities: 'Hiking, Kayaking, Bird Watching',
     latitude: 41.6533,
