@@ -1,7 +1,8 @@
-//you will need to link the other routes here if you add more
-const router = require("express").Router();
-const userRoutes = require("./userRoutes");
+const router = require('express').Router();
+const userRoutes = require('./userRoutes');
+//const journalRoutes = require('./projectRoutes');
 
-router.use("/users", userRoutes);
+router.use('/users', userRoutes);
+//router.use('/journal', journalRoutes);
 
 module.exports = router;

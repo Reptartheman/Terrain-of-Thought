@@ -1,9 +1,13 @@
 {
   "dependencies": {
+    "connect-session-sequelize": "^7.0.4",
+    "dotenv": "^16.0.3",
     "express": "^4.18.2",
     "express-handlebars": "^7.0.1",
     "express-session": "^1.17.3",
     "handlebars": "^4.7.7",
+    "mysql2": "^3.2.0",
+    "react-star-ratings": "^2.3.0",
     "sequelize": "^6.29.1"
   }
 }

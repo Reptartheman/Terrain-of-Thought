@@ -75,31 +75,7 @@ div > img {
     text-align: center;
 }
 
-.sidebar {
-    height: 100%;
-    width: 600px;
-    top: 0;
-    left: 0;
-    position: fixed;
-    background-color: darkslategrey;
-    padding-top: 20px;
- }
-
- .sidebar h1 {
-    font-family: serif;
-    font-weight: bold;
-    text-align: center;
-    padding-top: 50px
- }
-
- .journal-entry {
-    margin-top: 150px;
-    margin-left: 700px;
-    height: 500px;
-    width: 50%;
- }
-
- .journal-button {
-    margin-top: 50px;
-    margin-left: 700px;
- }
+#map { 
+    height: 300px; 
+    width: 300px;
+}
