@@ -1,5 +1,4 @@
 const { Model, DataTypes } = require('sequelize');
-//const bcrypt = require('bcrypt'); do we need this?
 const sequelize = require('../config/connection');
 
 class User extends Model {
