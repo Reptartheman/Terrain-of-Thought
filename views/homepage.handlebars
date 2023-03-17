@@ -6,12 +6,15 @@
 
 <body style="background-color: #064a11;">
     <h1 id="loginpagetitle">Your trips</h1>
-    {{#each parks as |park| }}
+
+
 
     
+    {{#each parks as |park| }}
 
     <div class="grid-container">
-        <div class="div2">{{park.name}}
+        <div class="div2">
+            <h4>{{park.parkname}}</h4>
             <img src="../public/assets/park.png" alt="park">
         </div>
         {{/each}}
