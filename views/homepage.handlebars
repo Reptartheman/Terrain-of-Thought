@@ -1,22 +1,15 @@
-<div>
-  <img class="background-img" id="random-images" alt="random image" />
-  <h1 class="title text-center">Terrain of Thought</h1>
-  <h2 class="subtitle text-center">A National Park Digital Journal</h2>
-</div>
-
-<body style="background-color: #064a11;">
+<div style="margin-top: 100px;">
     <h1 id="loginpagetitle">Your trips</h1>
 
-
-
-    
     {{#each parks as |park| }}
 
     <div class="grid-container">
-        <div class="div2">
-            <h4>{{park.parkname}}</h4>
-            <img src="../public/assets/park.png" alt="park">
+        <div>
+            <h4>{{park.name}}</h4>
+            {{!-- <h4>Park Name</h4> --}}
+            <a href="/journal/{{park.id}}"><img src="/assets/{{park.filename}}" alt="park"></a>
         </div>
+    </div>
         {{/each}}
 
         {{!-- <div class="div3">{{parks[1].name}}
@@ -61,6 +54,6 @@
         <div class="div16">{{parks[14].name}}
             <img src="../public/assets/indiana-dunes.jpg" alt="park">
         </div> --}}
-        </div> 
+ </div> 
 
-<script src="./public/js/script.js"></script>
+<script src="/js/script.js"></script>
