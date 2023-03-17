@@ -6,53 +6,58 @@
 
 <body style="background-color: #064a11;">
     <h1 id="loginpagetitle">Your trips</h1>
+    {{#each parks as |park| }}
+
+    
 
     <div class="grid-container">
-        <div class="div2">{{parks[0].parkname}}
-            <img src="../public/assets/great-smokey-mountains.jpg" alt="park">
+        <div class="div2">{{park.name}}
+            <img src="../public/assets/park.png" alt="park">
         </div>
-        <div class="div3">{{parks[1].parkname}}
+        {{/each}}
+
+        {{!-- <div class="div3">{{parks[1].name}}
             <img src="../public/assets/grand-canyon.jpg" alt="park">
         </div>
-        <div class="div4">{{parks[2].parkname}}
+        <div class="div4">{{parks[2].name}}
             <img src="../public/assets/rocky-mountain.jpg" alt="park">
         </div>
-        <div class="div5">{{parks[3].parkname}}
+        <div class="div5">{{parks[3].name}}
             <img src="../public/assets/zion.jpg" alt="park">
         </div>
-        <div class="div6">{{parks[4].parkname}}
+        <div class="div6">{{parks[4].name}}
             <img src="../public/assets/yosemite.jpg" alt="park">
         </div>
-        <div class="div7">{{parks[5].parkname}}
+        <div class="div7">{{parks[5].name}}
             <img src="../public/assets/yellowstone.jpg" alt="park">
         </div>
-        <div class="div8">{{parks[6].parkname}}
+        <div class="div8">{{parks[6].name}}
             <img src="../public/assets/acadia.jpg" alt="park">
         </div>
-        <div class="div9">{{parks[7].parkname}}
+        <div class="div9">{{parks[7].name}}
             <img src="../public/assets/grand-teton.jpg" alt="park">
         </div>
-        <div class="div10">{{parks[8].parkname}}
+        <div class="div10">{{parks[8].name}}
             <img src="../public/assets/olympic.jpg" alt="park">
         </div>
-        <div class="div11">{{parks[9].parkname}}
+        <div class="div11">{{parks[9].name}}
             <img src="../public/assets/glacier.jpg" alt="park">
         </div>
-        <div class="div12">{{parks[10].parkname}}
+        <div class="div12">{{parks[10].name}}
             <img src="../public/assets/joshua-tree.jpg" alt="park">
         </div>
-        <div class="div13">{{parks[11].parkname}}
+        <div class="div13">{{parks[11].name}}
             <img src="../public/assets/bryce-canyon.jpg" alt="park">
         </div>
-        <div class="div14">{{parks[12].parkname}}
+        <div class="div14">{{parks[12].name}}
             <img src="../public/assets/cuyahoga-valley.jpg" alt="park">
         </div>
-        <div class="div15">{{parks[13].parkname}}
+        <div class="div15">{{parks[13].name}}
             <img src="../public/assets/gateway-arch.jpg" alt="park">
         </div>
-        <div class="div16">{{parks[14].parkname}}
+        <div class="div16">{{parks[14].name}}
             <img src="../public/assets/indiana-dunes.jpg" alt="park">
-        </div>
-        </div>
+        </div> --}}
+        </div> 
 
 <script src="./public/js/script.js"></script>
