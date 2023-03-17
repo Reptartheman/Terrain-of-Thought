@@ -1,5 +1,5 @@
    <main>
-      <div class="sidebar" style="background-image: url(./public/assets/{{park.parkname}}); background-size: cover;" >
+      <div class="sidebar" style="background-image: url(./public/assets/{{park.filename}}); background-size: cover;" >
         <div>
         </div>
         <h1>{{park.parkname}}</h1>
@@ -7,7 +7,7 @@
         <h2 class="park-info">{{park.activities}}</h2>
         <div id="map"></div>
       </div>
-      <form>
+      <form id="journalform">
         <div class="form-group">
           <textarea
             class="form-control journal-entry"
@@ -15,14 +15,14 @@
             rows="4"
           ></textarea>
         </div>
-      </form>
-      <button type="button" class="btn btn-primary btn-sm journal-btn">
+              <button type="button" class="btn btn-primary btn-sm journal-btn">
         Submit
       </button>
+      </form>
       <div class="card text-bg-secondary mb-3 journal-card">
         <div class="card-header">{{park.parkname}} Journal History</div>
         <div class="card-body">
-          <p class="card-text">This will be where the data from the past post from the user is persistent and can be viewed after being submit.</p>
+          <p class="card-text" id="journalhistory"></p>
         </div>
     </main>
     <script src="https://unpkg.com/leaflet@1.9.3/dist/leaflet.js"
@@ -39,5 +39,3 @@
           attribution: '&copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a>'
       }).addTo(map);
     </script>  
-  </body>
-</html>

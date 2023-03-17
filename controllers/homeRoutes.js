@@ -14,14 +14,14 @@ router.get("/", withAuth, async (req, res) => {
   }
 });
 
-router.get("/journal", async (req, res) => {
-  try {
-    const journalData = await Journal.findAll({});
-    const entries = journalData.map((entry) => entry.get({ plain: true }));
-    res.render("journal");
-  } catch (err) {
-    res.status(500).json(err);
-  }
-});
+// router.get("/journal", async (req, res) => {
+//   try {
+//     const journalData = await Journal.findAll({});
+//     const entries = journalData.map((entry) => entry.get({ plain: true }));
+//     res.render("journal");
+//   } catch (err) {
+//     res.status(500).json(err);
+//   }
+// });
 
 module.exports = router;
