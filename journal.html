@@ -52,7 +52,7 @@
       <div class="card text-bg-secondary mb-3 journal-card">
         <div class="card-header">{{park.parkname}} Journal History</div>
         <div class="card-body">
-          <p class="card-text">This will be where the data from the past post from the user is persistent and can be viewed after being submit.</p>
+          <p class="card-text" id="journalhistory"></p>
         </div>
     </main>
     <script src="https://unpkg.com/leaflet@1.9.3/dist/leaflet.js"
@@ -69,6 +69,7 @@
           attribution: '&copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a>'
       }).addTo(map);
     </script>
+    <script src="./public/js/journal.js"></script>
     <!-- <script src="./public/js/script.js"></script> -->
   </body>
 </html>
