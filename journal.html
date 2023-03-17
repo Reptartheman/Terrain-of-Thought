@@ -24,17 +24,21 @@
     <link rel="stylesheet" href="./public/css/style.css" />
   </head>
   <body>
+    <!-- <script src="https://unpkg.com/leaflet@1.9.3/dist/leaflet.js"
+    integrity="sha256-WBkoXOwTeyKclOHuWtc+i2uENFpDZ9YPdf5Hf+D7ewM="
+    crossorigin=""></script> -->
     <main>
-      <div class="sidebar" style="background-image: url(./public/assets/{{data.name}}); background-size: cover;" >
+      <div class="sidebar" style="background-image: url(./public/assets/cuyahoga-valley.jpg); background-size: cover;" >
+      <!-- <div class="sidebar" style="background-image: url(./public/assets/{{park.parkname}}); background-size: cover;" > -->
         <div>
         </div>
-        <h1>Park Name</h1>
-        <h2 class="park-info">State</h2>
-        <h2 class="park-info">Activities</h2>
+        <h1>{{park.parkname}}</h1>
+        <h2 class="park-info">{{park.state}}</h2>
+        <h2 class="park-info">{{park.activities}}</h2>
+        <div id="map"></div>
       </div>
       <form>
         <div class="form-group">
-          <label for="exampleFormControlTextarea1">Example textarea</label>
           <textarea
             class="form-control journal-entry"
             id="exampleFormControlTextarea1"
@@ -46,10 +50,25 @@
         Submit
       </button>
       <div class="card text-bg-secondary mb-3 journal-card">
-        <div class="card-header">{{data.name}} Journal History</div>
+        <div class="card-header">{{park.parkname}} Journal History</div>
         <div class="card-body">
           <p class="card-text">This will be where the data from the past post from the user is persistent and can be viewed after being submit.</p>
         </div>
     </main>
+    <script src="https://unpkg.com/leaflet@1.9.3/dist/leaflet.js"
+    integrity="sha256-WBkoXOwTeyKclOHuWtc+i2uENFpDZ9YPdf5Hf+D7ewM="
+    crossorigin=""></script>
+    <script>
+      var map = L.map('map').setView([51.505, -0.09], 13);
+      var marker = L.marker([51.5, -0.09]).addTo(map);
+      marker.bindPopup("<b>Hello world!</b><br>I am a popup.").openPopup();
+      
+      
+      L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
+          maxZoom: 19,
+          attribution: '&copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a>'
+      }).addTo(map);
+    </script>
+    <!-- <script src="./public/js/script.js"></script> -->
   </body>
 </html>
