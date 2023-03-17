@@ -3,7 +3,7 @@ const router = require("express").Router();
 //this works
 //const userRoutes = require("./api/userRoutes");
 
-const homeRoutes = require("./api/homeRoutes");
+const homeRoutes = require("./homeRoutes");
 
 const apiRoutes = require("./api");
 
@@ -12,11 +12,12 @@ const landingRoutes = require("./landingRoutes");
 
 //this works
 //router.use("/users", userRoutes);
+router.use("/homepage", homeRoutes);
 router.use("/", landingRoutes);
 //this is what breaks it
 //router.use("/parks", homeRoutes);
 
-router.use("/api", apiRoutes)
+router.use("/api", apiRoutes);
 
 //this works
 module.exports = router;
