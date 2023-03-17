@@ -1,6 +1,7 @@
 const router = require("express").Router();
 //this works
 const userRoutes = require("./userRoutes");
+const journalRoutes = require("./journalRoute");
 
 //const homeRoutes = require("./homeRoutes");
 
@@ -11,6 +12,7 @@ const userRoutes = require("./userRoutes");
 
 //this works
 router.use("/users", userRoutes);
+router.use("/journal", journalRoutes);
 //router.use("/homepage", homeRoutes);
 //router.use("/", landingRoutes);
 //this is what breaks it

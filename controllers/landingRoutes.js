@@ -14,7 +14,7 @@ router.get("/login", async (req, res) => {
   res.render("login");
 });
 
-router.get("/mydashboard",withAuth, (req, res) => {
+router.get("/journal",withAuth, (req, res) => {
  res.render('journal')
   //const userData = await User.findone(where: {id:req.session.user_id})
 })
