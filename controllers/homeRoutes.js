@@ -7,6 +7,7 @@ router.get("/", withAuth, async (req, res) => {
   try {
     const parkData = await Park.findAll({});
     const parks = parkData.map((park) => park.get({ plain: true }));
+    console.log(parks)
 
     res.render("homepage", { layout: "main", parks });
   } catch (err) {
