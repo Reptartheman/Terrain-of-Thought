@@ -33,14 +33,12 @@ body {
 }
 
 .grid-container {
-    display: grid;
-    grid-template-columns: repeat(5, 1fr);
-    grid-template-rows: repeat(3, 1fr) repeat(2, 0fr);
-    grid-column-gap: 50px;
-    grid-row-gap: 19px;
+    float: left;
+    width: 33.33%;
+    padding: 50px; 
 }
 
-
+/* 
 .div2 {
     grid-area: 1 / 1 / 2 / 2;
 }
@@ -99,17 +97,21 @@ body {
 
 .div16 {
     grid-area: 3 / 2 / 4 / 3;
-}
+} */
 
 .grid-container>div {
     background-color: whitesmoke;
-    font-size: 50px;
-    font-family: 'Vollkorn', serif;
-    text-align: center;
     border: 1px solid black;
+    text-align: center;
 }
 
-div>img {
+.grid-container h4 {
+    font-size: 20px;
+    font-family: 'Vollkorn', serif;
+    text-align: center;
+}
+
+div>a img {
     width: 250px;
     height: 250px;
 }
