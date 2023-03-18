@@ -9,7 +9,7 @@ router.get("/", withAuth, async (req, res) => {
     const parks = parkData.map((park) => park.get({ plain: true }));
     console.log(parks)
 
-    res.render("homepage", { layout: "main", parks });
+    res.render("homepage", { parks, logged_in: req.session.logged_in });
   } catch (err) {
     res.status(500).json(err);
   }
