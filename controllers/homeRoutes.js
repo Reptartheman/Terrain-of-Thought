@@ -1,5 +1,5 @@
 const router = require("express").Router();
-const { Journal, Park } = require("../models");
+const { Park } = require("../models");
 const withAuth = require("../utils/auth");
 
 //find all parks and render to homepage

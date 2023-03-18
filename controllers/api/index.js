@@ -20,3 +20,5 @@ router.use("/journal", journalRoutes);
 
 //router.use("/api", apiRoutes);
 module.exports = router;
+
+// 
