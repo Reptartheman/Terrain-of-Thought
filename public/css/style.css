@@ -9,7 +9,7 @@ body {
 }
 
 .title {
-    margin-top: -1000px;
+    margin-top: -50%;
     font-size: 150px;
     color: whitesmoke;
     text-shadow: 1px 1px 20px #000000;
