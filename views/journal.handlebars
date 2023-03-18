@@ -2,7 +2,7 @@
       <div class="sidebar" style="background-image: url(./public/assets/{{park.filename}}); background-size: cover;" >
         <div>
         </div>
-        <h1>{{park.parkname}}</h1>
+        <h1>{{park.name}}</h1>
         <h2 class="park-info">{{park.state}}</h2>
         <h2 class="park-info">{{park.activities}}</h2>
         <div id="map"></div>
@@ -19,11 +19,13 @@
         Submit
       </button>
       </form>
+
       <div class="card text-bg-secondary mb-3 journal-card">
-        <div class="card-header">{{park.parkname}} Journal History</div>
+        <div class="card-header">{{park.name}} Journal History</div>
         <div class="card-body">
           <p class="card-text" id="journalhistory"></p>
         </div>
+        
     </main>
     <script src="https://unpkg.com/leaflet@1.9.3/dist/leaflet.js"
     integrity="sha256-WBkoXOwTeyKclOHuWtc+i2uENFpDZ9YPdf5Hf+D7ewM="
@@ -31,7 +33,7 @@
     <script>
       var map = L.map('map').setView([{{park.latitude}}, {{park.longitude}}], 13);
       var marker = L.marker([{{park.latitude}}, {{park.longitude}}]).addTo(map);
-      marker.bindPopup({{park.parkname}}).openPopup();
+      marker.bindPopup({{park.name}}).openPopup();
       
       
       L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {

@@ -4,10 +4,11 @@
     {{#each parks as |park| }}
 
     <div class="grid-container">
-        <div>
+        <div class='park-section'>
             <h4>{{park.name}}</h4>
             {{!-- <h4>Park Name</h4> --}}
-            <a href="/journal/{{park.id}}"><img src="/assets/{{park.filename}}" alt="park"></a>
+            {{!-- <a href="/journal/{{park.id}}"> --}}
+            <img class="park-image" src="/assets/{{park.filename}}" alt="park"></a>
         </div>
     </div>
         {{/each}}
@@ -56,4 +57,4 @@
         </div> --}}
  </div> 
 
-<script src="/js/script.js"></script>
+<script src="/js/park.js"></script>
