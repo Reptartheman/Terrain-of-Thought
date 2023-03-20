@@ -1,3 +1,6 @@
+// When working, this function will post and display the form information
+// for each journal entry a user creates.
+
 const newFormHandler = async (event) => {
     event.preventDefault();
   

@@ -1,5 +1,8 @@
 const { Journal } = require('../models')
 
+
+// This seed data will contain the information sent by the user for each journal entry
+
 const journalData = [
   
   {

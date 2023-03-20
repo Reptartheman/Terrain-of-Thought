@@ -2,6 +2,8 @@ const router = require("express").Router();
 const { Journal, Park } = require("../models");
 const withAuth = require("../utils/auth");
 
+// Generates the park page based on the park id number
+// and displays the journals associated with that park
 
 router.get('/:id', withAuth, async (req, res) => {
     try {
