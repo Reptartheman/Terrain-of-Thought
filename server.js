@@ -1,3 +1,6 @@
+// Welcome to Terrain of Thought! This project is a work in progress
+// but on behalf of team 2, we hope you enjoy!
+
 const express = require("express");
 const path = require("path");
 const routes = require("./controllers");

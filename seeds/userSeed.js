@@ -1,6 +1,8 @@
 
 const { User } = require('../models')
 
+// Saves and stores user information to check authentication
+
 const userData = [
   {
     username: 'Lebron',

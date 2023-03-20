@@ -1,3 +1,5 @@
+// This is the login page information
+
 const loginFormHandler = async (event) => {
     event.preventDefault();
   
@@ -22,6 +24,8 @@ const loginFormHandler = async (event) => {
     }
   };
   
+
+  // This is the signup code for new users
   const signupFormHandler = async (event) => {
     event.preventDefault();
   

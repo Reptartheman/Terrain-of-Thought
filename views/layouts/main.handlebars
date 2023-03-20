@@ -12,9 +12,10 @@
 
 <body style="background-color: #064a11;">
     <header>
+        {{!-- Navigation bar, displayed on each page. --}}
         <nav class="navbar navbar-expand-lg fixed-top bg-body-tertiary" style="padding: 0%; border: 20px; border-style: solid; border-color: #3e5642">
             <div class="container-fluid" style="background-color: #3e5642;">
-                <a class="navbar-brand" style="color: whitesmoke;" href="#">Home</a>
+                <a class="navbar-brand" style="color: whitesmoke;" href="/homepage">Home</a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
                     aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
@@ -22,7 +23,7 @@
                 <div class="collapse navbar-collapse" id="navbarNav">
                     <ul class="navbar-nav">
                         <li class="nav-item">
-                            <a class="nav-link" style="color: whitesmoke;" aria-current="page" href="#">About National Parks</a>
+                            <a class="nav-link" style="color: whitesmoke;" aria-current="page" href="https://www.nps.gov/index.htm">About National Parks</a>
                         </li>
                             {{#if logged_in}}
                         <li class="nav-item">

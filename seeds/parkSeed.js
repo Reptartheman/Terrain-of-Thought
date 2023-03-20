@@ -1,5 +1,8 @@
 const { Park } = require('../models');
 
+// This seed contains all of the necessary api park data
+// for all 15 parks displayed. 
+
 const parkData = [
   {
     name: 'Great Smoky Mountains National Park',
