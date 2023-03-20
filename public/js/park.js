@@ -1,15 +1,16 @@
 const parkIcon = document.querySelectorAll('.park-image')
+
 const newHandler = async function (e) {
     e.preventDefault();
     console.log(e.target);
     if ( parkIcon ) {
-      const response = await fetch(`/journalRoute`, {
+      const response = await fetch('/journal', {
         method: 'GET',
-      });
+      }); 
       if (response.ok) {
         document.location.replace('/journal/');
       } else {
-        alert('didnt work shithead');
+        alert('Error 404 Not Found');
       }
     }
   };

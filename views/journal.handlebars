@@ -1,5 +1,5 @@
    <main>
-      <div class="sidebar" style="background-image: url(/{{park.filename}}); background-size: cover;" >
+      <div class="sidebar" style="background-size: cover;" >
         <div>
         </div>
         <h1>{{park.name}}</h1>
@@ -19,7 +19,7 @@
         Submit
       </button>
       </form>
-
+  
       <div class="card text-bg-secondary mb-3 journal-card">
         <div class="card-header">{{park.name}} Journal History</div>
         <div class="card-body">
@@ -31,9 +31,8 @@
     integrity="sha256-WBkoXOwTeyKclOHuWtc+i2uENFpDZ9YPdf5Hf+D7ewM="
     crossorigin=""></script>
     <script>
-      var map = L.map('map').setView([{{park.latitude}}, {{park.longitude}}], 13);
-      var marker = L.marker([{{park.latitude}}, {{park.longitude}}]).addTo(map);
-      marker.bindPopup({{park.name}}).openPopup();
+      var map = L.map('map').setView({{park.latitude}}, {{park.longitude}}, 13);
+      var marker = L.marker({{park.latitude}}, {{park.longitude}}).addTo(map);
       
       
       L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
