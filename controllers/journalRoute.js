@@ -3,20 +3,21 @@ const { Journal, Park } = require("../models");
 const withAuth = require("../utils/auth");
 
 
-router.get('/journal/:id', withAuth, async (req, res) => {
+router.get('/:id', withAuth, async (req, res) => {
     try {
-      const parkID = await Park.findByPk(req.params.id, {include: {model: Park, Journal, required: true}, });
+      const parkID = await Park.findByPk(req.params.id, { include: Journal });
   
-      const parks = parkID.map((park) => park.get({ plain: true }));
+      const park = parkID.get({ plain: true });
 
-      console.log(parks)
+      console.log(park)
   
       res.render('journal', {
-        parks,
+        park,
         // Pass the logged in flag to the template
         logged_in: req.session.logged_in,
       });
     } catch (err) {
+      console.log(err)
       res.status(500).json(err);
     }
   });

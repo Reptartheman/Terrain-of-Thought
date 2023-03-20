@@ -88,12 +88,13 @@ body {
 }
 
 .sidebar {
+    background-color: grey;
     height: 100%;
     width: 500px;
     top: 0;
     left: 0;
     position: fixed;
-    padding-top: 20px;
+    padding-top: 15%;
 }
 
 
