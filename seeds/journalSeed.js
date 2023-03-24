@@ -6,14 +6,16 @@ const { Journal } = require('../models')
 const journalData = [
   
   {
-    title: 'postnumber1',
-    content: 'I am post 1',
-    user_id: 1
+    input: 'postnumber1',
+  
+    user_id: 1,
+    park_id: 2
   },
   {
-    title: 'postnumber2',
-    content: 'I am post 2',
-    user_id: 2
+    input: 'postnumber2',
+
+    user_id: 2,
+    park_id: 1
 
   }
 ]
