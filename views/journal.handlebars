@@ -25,7 +25,11 @@
       <div class="card text-bg-secondary mb-3 journal-card">
         <div class="card-header">{{park.name}} Journal History</div>
         <div class="card-body">
-          <p class="card-text" id="journalhistory"></p>
+          <div class="card-text" id="journalhistory">
+             {{#each park.journals as |journal| }}
+             <p>{{journal.input}}</p>
+             {{/each}}
+          </div>
         </div>
         
     </main>
